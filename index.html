@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FillForm Flash - Your Ultimate Form Filling Extension</title>
+  
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+ 
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #0a0a0a;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 1rem;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border-radius: 1rem;
+    }
+    .step-card {
+      display: flex;
+      align-items: start;
+      padding: 1.25rem;
+      border-radius: 0.75rem;
+      background-color: #111;
+      border: 1px solid #262626;
+      transition: all 0.3s ease;
+    }
+    .step-card:hover {
+      border-color: rgba(168, 85, 247, 0.5);
+      box-shadow: 0 4px 12px rgba(168, 85, 247, 0.25);
+    }
+    .step-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 9999px;
+      background-color: rgb(168, 85, 247);
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.125rem;
+      margin-right: 1rem;
+      flex-shrink: 0;
+    }
+    .step-content h4 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: #f5f5f5;
+      margin-bottom: 0.25rem;
+    }
+    .step-content p {
+      font-size: 0.875rem;
+      color: #a3a3a3;
+      line-height: 1.5;
+    }
+    code {
+      background: rgba(255, 255, 0, 0.1);
+      color: rgb(250, 204, 21);
+      padding: 0.15rem 0.4rem;
+      border-radius: 0.375rem;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body class="text-gray-100">
+
+  <!-- Header -->
+  <header class="text-center py-16 px-6">
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-purple-400 tracking-wide">
+      FillForm Flash ⚡
+    </h1>
+    <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
+      Your Ultimate Form Filling Extension — Easy to install in Developer Mode, simple to use, and lightning fast.
+    </p>
+  </header>
+
+  <!-- Download Section -->
+  <section class="text-center py-12 px-6">
+    <p class="mb-6 text-gray-200 text-lg">
+      Click the button below to download the FillForm Flash extension files.
+    </p>
+    <a 
+      href="https://drive.google.com/file/d/1t7QCJLWCaij_GlBrJ-ko-yV15hXWGXNv/view?usp=sharing" 
+      target="_blank" 
+      class="px-8 py-4 rounded-2xl bg-purple-600 text-white font-semibold shadow-lg hover:bg-purple-700 transition"
+    >
+      ⬇️ Download FillForm Flash
+    </a>
+  </section>
+
+  <!-- Instructions & Video -->
+  <section class="mt-20 px-6 max-w-6xl mx-auto">
+    <h2 class="text-4xl font-extrabold mb-12 text-purple-400 text-center tracking-wide">
+      Installation and Usage
+    </h2>
+
+    <div class="grid lg:grid-cols-2 gap-12 items-start">
+
+      <!-- Usage Instructions -->
+      <div class="lg:order-1 order-2 space-y-6">
+
+        <!-- Installation Steps -->
+        <h3 class="text-2xl font-bold mb-4 text-gray-100">Installation Steps</h3>
+        
+        <div class="space-y-4">
+          <div class="step-card">
+            <div class="step-icon">1</div>
+            <div class="step-content">
+              <h4>Download & Extract</h4>
+              <p>Download the extension <strong>ZIP file</strong> and extract it to a folder on your computer.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-icon">2</div>
+            <div class="step-content">
+              <h4>Open Extensions Page</h4>
+              <p>Open your browser (Chrome, Edge, Brave, Opera, etc.) and go to the extensions page.  
+              For example: <code>chrome://extensions/</code> (Chrome/Brave/Opera) or <code>edge://extensions/</code> (Edge).</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-icon">3</div>
+            <div class="step-content">
+              <h4>Enable Developer Mode</h4>
+              <p>Use the toggle (usually at the top-right corner) to enable <strong>Developer Mode</strong>.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-icon">4</div>
+            <div class="step-content">
+              <h4>Load the Extension</h4>
+              <p>Click <strong>Load unpacked</strong> and select the extracted <strong>FillForm Flash</strong> folder.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Usage Guide -->
+        <h3 class="text-2xl font-bold mt-10 mb-4 text-gray-100">Usage Guide</h3>
+        <div class="space-y-4">
+          <div class="step-card">
+            <div class="step-icon">5</div>
+            <div class="step-content">
+              <h4>Data Input</h4>
+              <p>Click the FillForm Flash icon ⚡ in your toolbar. Enter your data or upload a <code>JSON</code> file, then press <strong>Save</strong>.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-icon">6</div>
+            <div class="step-content">
+              <h4>Customization</h4>
+              <p>Use <strong>Advanced Settings</strong> to map fields, add synonyms, or <strong>Wipe Data</strong>.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-icon">7</div>
+            <div class="step-content">
+              <h4>Auto-Fill</h4>
+              <p>On Google/Microsoft Forms, click the <strong>Auto-Fill</strong> button to instantly populate fields.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video -->
+      <div class="lg:order-2 order-1 lg:sticky lg:top-8 self-start">
+        <h3 class="text-2xl font-bold mb-6 text-gray-100 hidden lg:block">Visual Guide</h3>
+        <div class="video-container shadow-2xl shadow-purple-500/30">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/N5xyH1FtoUI?si=1J4rWrYQSxOeZzqq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p class="text-center text-sm text-gray-400 mt-4">
+          (Tutorial video demonstrating how to extract a ZIP file and load/unpack it in the extension.)
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-20 py-8 text-center border-t border-gray-800 text-gray-500 text-sm">
+    <p>&copy; 2025 FillForm Flash. All rights reserved.</p>
+    <p class="mt-2">Contact: 
+      <a href="mailto:yourname@email.com" class="text-purple-400 hover:underline">
+        kishansg32@gmail.com
+      </a>
+    </p>
+  </footer>
+
+</body>
+</html>
